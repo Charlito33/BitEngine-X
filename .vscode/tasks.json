@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile App",
+            "command": "C:/Users/charl/Documents/PlaydateSDK/bin/pdc.exe",
+            "args": ["-sdkpath", "C:/Users/charl/Documents/PlaydateSDK", "source", "builds/dev_build.pdx"],
+            "type": "shell",
+            "group": {
+                "kind": "build",
+
+                "isDefault": true
+            }
+        }
+    ]
+}

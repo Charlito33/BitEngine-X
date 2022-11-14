@@ -1,0 +1,14 @@
+{
+    "Lua.diagnostics.globals": [
+        "playdate",
+        "import"
+    ],
+    "Lua.workspace.library": [
+        "C:/Users/charl/Documents/PlaydateSDK/CoreLibs"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-doc-class",
+        "undefined-global"
+    ],
+    "Lua.runtime.nonstandardSymbol": ["+=", "-=", "*=", "/="]
+}

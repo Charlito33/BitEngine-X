@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "request": "launch",
+            "type": "playdate",
+            "name": "Launch simulator and play app",
+            "preLaunchTask": "Compile App",
+            "source": "${workspaceFolder}/source",
+            "output": "${workspaceFolder}/builds/dev_build.pdx"
+        }
+    ]
+}
