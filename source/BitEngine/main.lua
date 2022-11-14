@@ -10,8 +10,6 @@ _G['BitEngine'] = {}
 _G['Game'] = {}
 
 function playdate.update()
-    -- print("Hello World !")
-
     gfx.sprite.update()
     pd.timer.updateTimers()
 end
