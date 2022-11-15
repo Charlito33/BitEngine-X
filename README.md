@@ -1,5 +1,7 @@
 # BitEngine X
 
+A Game Engine for the PlayDate
+
 ## FAQ
 
 
