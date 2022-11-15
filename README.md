@@ -2,6 +2,13 @@
 
 A Game Engine for the PlayDate
 
+## To-Do
+✅ Scenes Management
+✅ Transitions Management
+⌛ GitHub Wiki
+❌ Built-In Transitions
+❌ Particles System
+
 ## FAQ
 
 
