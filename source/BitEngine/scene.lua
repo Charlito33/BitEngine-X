@@ -25,6 +25,7 @@ function BitEngine.sceneManager.switchScene(newScene, transition)
     end
 
     if BitEngine.sceneManager.currentScene then
+        BitEngine.sceneManager.currentScene:unregisterInputs()
         BitEngine.sceneManager.currentScene:hide()
     end
 
@@ -36,11 +37,16 @@ function BitEngine.sceneManager.switchScene(newScene, transition)
         gfx.sprite.redrawBackground()
     end
 
+    local endCallback = function ()
+        BitEngine.sceneManager.currentScene:registerInputs()
+    end
+
     if transition then
-        BitEngine.transitionManager.makeTransition(transition, midCallback, nil)
+        BitEngine.transitionManager.makeTransition(transition, midCallback, endCallback)
     else
         -- Don't do any transition, call directly callback
         midCallback()
+        endCallback()
     end
 end
 
@@ -68,12 +74,20 @@ function BitEngine.Scene:init()
     }
 end
 
-function BitEngine.Scene:show()
+function BitEngine.Scene:registerInputs()
     pd.inputHandlers.push(self.inputHandler)
 end
 
-function BitEngine.Scene:hide()
+function BitEngine.Scene:unregisterInputs()
     pd.inputHandlers.pop()
+end
+
+function BitEngine.Scene:show()
+    
+end
+
+function BitEngine.Scene:hide()
+    
 end
 
 function BitEngine.Scene:update()
