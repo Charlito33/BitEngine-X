@@ -10,5 +10,12 @@
         "undefined-doc-class",
         "undefined-global"
     ],
-    "Lua.runtime.nonstandardSymbol": ["+=", "-=", "*=", "/="]
+    "Lua.runtime.nonstandardSymbol": [
+        "+=",
+        "-=",
+        "*=",
+        "/="
+    ],
+    "todo-tree.tree.scanMode": "workspace",
+    "todo-tree.regex.regex": "(//|--|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)"
 }

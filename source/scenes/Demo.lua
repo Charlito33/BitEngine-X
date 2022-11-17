@@ -14,10 +14,11 @@ function Game.scenes.Demo:show()
 end
 
 function Game.scenes.Demo:drawBackground(x, y, width, height)
+    gfx.setImageDrawMode(gfx.kDrawModeFillBlack)
     gfx.drawText("Demo Scene #1", 50, 50)
 end
 
 function Game.scenes.Demo:AButtonDown()
     print("A Button Pressed in Demo Scene #1 !")
-    BitEngine.sceneManager.switchScene(Game.scenes.Demo2, Game.transitions.Demo)
+    BitEngine.sceneManager.switchScene(Game.scenes.Demo2, BitEngine.transitions.Tear)
 end

@@ -5,6 +5,7 @@ BitEngine.transitionManager.currentTransition = nil
 BitEngine.transitionManager.midTransitionCallback = nil
 BitEngine.transitionManager.endTransitionCallback = nil
 
+BitEngine.transitions = {}
 Game.transitions = {}
 
 function BitEngine.transitionManager.autoImport(path)
@@ -81,3 +82,9 @@ end
 function BitEngine.Transition:drawBackground(x, y, width, height)
 
 end
+
+-- Built-In Transitions
+
+import "BitEngine/transitions/Tear"
+
+BitEngine.transitions.Tear.instance = BitEngine.transitions.Tear()
