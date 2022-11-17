@@ -14,7 +14,7 @@ A Game Engine for the PlayDate
 
 **Q : Why "BitEngine X" ?**
 
-**A :** I made a lot of "engines" for playdate (more like libraries) :
+**A :** I made a lot of "engines" for PlayDate (more like libraries) :
 - SceneManager&emsp;&emsp;&emsp;&nbsp;&nbsp;=> For _Fishing Simulator_ and *unreleased/cancelled projects*
 - BitEngine&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;=> For _Blocks_
 - BitEngine 2&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;=> For _Stack_ and *2 cancelled projects*
