@@ -1,2 +1,0 @@
-Version Name   : X
-Version Number : 1.0.0
