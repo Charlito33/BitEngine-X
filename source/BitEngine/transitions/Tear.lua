@@ -68,22 +68,10 @@ function BitEngine.transitions.Tear:update()
     if self.sprites[1].y < -200 then
         BitEngine.transitionManager.endTransition()
     end
-
-    -- TODO : End Animation
-
-    --[[
-    self.rectangle1:moveBy(40, 0)
-    self.rectangle2:moveBy(-40, 0)
-
-    if self.rectangle1.x >= 200 and self.rectangle2.x <= 200 then
-        BitEngine.transitionManager.midTransition()
-    end
-    if self.rectangle1.x >= 600 and self.rectangle2.x <= -200 then
-        BitEngine.transitionManager.endTransition()
-    end
-    ]]--
 end
 
 function BitEngine.transitions.Tear:drawBackground(x, y, width, height)
 
 end
+
+BitEngine.transitions.Tear.instance = BitEngine.transitions.Tear()

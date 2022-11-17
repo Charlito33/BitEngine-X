@@ -22,8 +22,6 @@ function BitEngine.transitionManager.autoImport(path)
 end
 
 function BitEngine.transitionManager.makeTransition(transition, midCallback, endCallback)
-    printTable(transition)
-
     -- Convert "Class" to "Instance"
     if transition.super.className == "Transition" then
         transition = transition.instance
@@ -82,9 +80,3 @@ end
 function BitEngine.Transition:drawBackground(x, y, width, height)
 
 end
-
--- Built-In Transitions
-
-import "BitEngine/transitions/Tear"
-
-BitEngine.transitions.Tear.instance = BitEngine.transitions.Tear()
