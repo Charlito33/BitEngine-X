@@ -17,5 +17,6 @@
         "/="
     ],
     "todo-tree.tree.scanMode": "workspace",
-    "todo-tree.regex.regex": "(//|--|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)"
+    "todo-tree.regex.regex": "(//|--|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+    "git.enableCommitSigning": true
 }
