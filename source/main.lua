@@ -14,3 +14,5 @@ local fpsCounter = BitEngine.FPSCounter()
 fpsCounter:add()
 
 BitEngine.sceneManager.switchScene(Game.scenes.Demo.instance)
+
+print(collectgarbage("count"))

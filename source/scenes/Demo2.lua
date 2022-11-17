@@ -22,5 +22,5 @@ end
 
 function Game.scenes.Demo2:AButtonDown()
     print("A Button Pressed in Demo Scene #2 !")
-    BitEngine.sceneManager.switchScene(Game.scenes.Demo, BitEngine.transitions.Cards)
+    BitEngine.sceneManager.switchScene(Game.scenes.Demo, BitEngine.transitions.Tear)
 end
