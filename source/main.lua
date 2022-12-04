@@ -4,6 +4,7 @@ import "BitEngine/transition"
 import "BitEngine/transitions/Tear"
 import "BitEngine/transitions/Cards"
 import "BitEngine/FPSCounter"
+import "BitEngine/CrankIndicator"
 
 pd.display.setRefreshRate(50)
 

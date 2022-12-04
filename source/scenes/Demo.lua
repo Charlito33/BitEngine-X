@@ -2,6 +2,8 @@ class("Demo", {}, Game.scenes).extends(BitEngine.Scene)
 
 function Game.scenes.Demo:init()
     Game.scenes.Demo.super.init(self)
+
+    self.crankIndicator = BitEngine.CrankIndicator()
 end
 
 function Game.scenes.Demo:update()
@@ -9,8 +11,13 @@ function Game.scenes.Demo:update()
 end
 
 function Game.scenes.Demo:show()
-    Game.scenes.Demo.super.show(self)
     print("Show Demo Scene #1")
+
+    self.crankIndicator:add()
+end
+
+function Game.scenes.Demo:remove()
+    self.crankIndicator:remove()
 end
 
 function Game.scenes.Demo:drawBackground(x, y, width, height)
@@ -21,4 +28,8 @@ end
 function Game.scenes.Demo:AButtonDown()
     print("A Button Pressed in Demo Scene #1 !")
     BitEngine.sceneManager.switchScene(Game.scenes.Demo2, BitEngine.transitions.Cards)
+end
+
+function Game.scenes.Demo:BButtonDown()
+    self.crankIndicator:setDirection(BitEngine.CrankIndicator.COUNTER_CLOCKWISE)
 end

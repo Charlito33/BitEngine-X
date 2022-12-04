@@ -9,7 +9,6 @@ function Game.scenes.Demo2:update()
 end
 
 function Game.scenes.Demo2:show()
-    Game.scenes.Demo2.super.show(self)
     print("Show Demo Scene #2")
 end
 
