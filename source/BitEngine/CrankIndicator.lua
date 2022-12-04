@@ -10,6 +10,7 @@ function BitEngine.CrankIndicator:init()
 
     self:setSize(83, 48)
     self:moveTo(353, 211)
+    self:setZIndex(32767)
 
     self.frame = 1
     self.dir = 1

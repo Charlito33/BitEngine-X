@@ -4,6 +4,7 @@ function BitEngine.FPSCounter:init()
     BitEngine.FPSCounter.super.init(self)
 
     self:setSize(32, 24)
+    self:setZIndex(32767)
 end
 
 function BitEngine.FPSCounter:update()

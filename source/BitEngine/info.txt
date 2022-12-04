@@ -1,2 +1,2 @@
 Version Name   : X
-Version Number : 1.1.0
+Version Number : 1.1.1
